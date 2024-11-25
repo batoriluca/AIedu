@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+ menu{
+    background-color: transparent;
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    height: 100vh;
+    top: 0;
+    left: 100vw;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(179,242,255,0.5) 100%);
+    backdrop-filter: blur(7px);
+    z-index: 3;
+    transition: linear 0.3s;
+}
+
+.open{
+    position: absolute;
+    z-index: 2;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    
+}
+
+.open img{
+    width: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+ menu ul {
+    list-style: none;
+    display: block;
+    margin-top: 200px
+    
+}
+
+menu ul .close{
+    color: #073c54;
+    font-size: 50px;
+    margin-top: 20px;
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    cursor: pointer;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.531);
+    border: 2px solid rgba(255, 255, 255, 0.531);
+    position: relative;
+    font-family: "MuseoModerno", sans-serif;
+    transition: linear 0.2s;
+}
+menu ul .close:hover{
+    border: 2px solid #073c54;
+}
+
+menu ul img{
+    width: 100px;
+}
+
+menu ul .close:hover h4{
+    opacity: 1;
+}
+
+menu ul .close h4{
+    position: absolute;
+    left: 50%;
+    opacity: 0.6;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+menu ul li{
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    font-size: 30px;
+    opacity: 0.6;
+    transition: linear 0.1s;
+}
+
+menu ul li:hover{
+    opacity: 1;
+    
+}
+
+menu ul li a{
+    text-decoration: none;
+    width: fit-content;
+    color: #073c54;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 100;
+ 
+}
+
+.hero{
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(179, 242, 255, 0.772) 100%);
+    position: relative;
+    display: flex;
+}
+
+.hero .logo-img{
+    width: 600px;
+    height: fit-content;
+    position: relative;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    margin-left: 10%;
+}
+
+.hero .hero-text h1{
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    margin-left: 30px;
+    color: #0081ba;
+}
+
+.benefits{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.benefits div{
+    text-align: center;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 900;
+    position: relative;
+}
+
+.benefits div h1{
+    font-size: 180px;
+    color: white;
+    z-index: 1;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.15));
+}
+
+.benefits div h2{
+    margin-top: -120px;
+    z-index: 2;
+    position: relative;
+    color: #073c54;
+    font-size: 40px;
+}
+
+.benefits div p{
+    width: 300px;
+    margin-left: 50%;
+    font-size: 20px;
+    color: #0081ba;
+    transform: translateX(-50%);
+}
+
+.benefits svg{
+    width: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    
+    position: absolute;
+}
+
+.about{
+    margin-top: 150px;
+}
+
+.hero .hero-welcome-qa{
+    color: #073c54;
+    width: 50vw;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15vh;
+    font-family: "MuseoModerno", sans-serif;
+
+}
+
+.hero .hero-welcome-qa h1{
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.hero .hero-welcome-qa h2{
+    font-weight: 100;
+    font-size: 30px;
+    color: #0081ba;
+}
+
+.hero-welcome-qa div{
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.hero-welcome-qa div input[type="text"]{
+    width: 80%;
+    position: relative;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.74);
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.15));
+    font-family: "MuseoModerno", sans-serif;
+    color: #073c54;
+    border: none;
+    outline: none;
+    border: 1px solid #073c54;
+}
+
+.hero-welcome-qa div input[type="submit"]{
+    position: relative;
+    width: 15%;
+    padding: 10px;
+    background-color: #073c54;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: "MuseoModerno", sans-serif;
+    border: 1px solid #073c54;
+    outline: none;
+    color: white;
+    transition: linear 0.2s;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.15));
+}
+
+.hero-welcome-qa div input[type="submit"]:hover{
+    background-color: rgba(255, 255, 255, 0.74);
+    color: #073c54;
+}
+
+.answers{
+padding:  100px 0;
+    width: 100vw;
+    position: relative;
+    min-height: 80vh;
+    height: fit-content;
+    background-color: #073c54;
+}
+
+.answers .outline-card{
+    border:3px solid white;
+    width: 50vw;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.answers .outline-card .answer-card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
