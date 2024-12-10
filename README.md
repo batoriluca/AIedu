@@ -1,0 +1,1 @@
+AIedu este un web app care iti poate genera exercitii/subiecte de bac, indicatii si rezolvari. De asemenea are si o sectiune de Q&A in care ii poti plasa o intrebare la care primesti un raspuns aproape instant.
